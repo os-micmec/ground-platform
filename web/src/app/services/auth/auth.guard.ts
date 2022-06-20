@@ -32,7 +32,6 @@ import { NavigationService } from '../navigation/navigation.service';
 export class AuthGuard implements CanActivate {
   constructor(
     private authService: AuthService,
-     
     private navigationService: NavigationService
   ) {}
 
