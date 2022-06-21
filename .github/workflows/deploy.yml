@@ -25,7 +25,7 @@ on:
     paths:
       - "web-ng/**"
 jobs:
-  test-coverage:
+  firebase-deploy:
     runs-on: ubuntu-latest
     defaults:
       run:
