@@ -19,19 +19,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "src/app/shared/styles"
-              ]
+              "includePaths": ["src/app/shared/styles"]
             },
-            "styles": [
-              "src/custom-theme.scss",
-              "src/styles.scss"
-            ],
+            "styles": ["src/custom-theme.scss", "src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -67,7 +59,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumError": "50kb"
                 }
               ]
             }
@@ -106,19 +98,11 @@
               }
             ],
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "src/app/shared/styles"
-              ]
+              "includePaths": ["src/app/shared/styles"]
             },
-            "styles": [
-              "src/custom-theme.scss",
-              "src/styles.scss"
-            ],
+            "styles": ["src/custom-theme.scss", "src/styles.scss"],
             "scripts": [],
             "codeCoverage": true
           }
@@ -131,9 +115,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
