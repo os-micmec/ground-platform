@@ -28,9 +28,11 @@ export const environment = {
     appId: process.env.FIREBASE_CONFIG_APP_ID,
   },
   cloudFunctionsUrl: process.env.CLOUD_FUNCTIONS_URL,
-  offlineBaseMapSources: {
-    url: process.env.OFFLINE_BASE_MAP_SOURCES_URL,
-  },
+  offlineBaseMapSources: [
+    {
+      url: process.env.OFFLINE_BASE_MAP_SOURCES_URL,
+    },
+  ],
   useEmulators: false,
   env: Env.Prod,
 };
