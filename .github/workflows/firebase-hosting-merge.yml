@@ -24,14 +24,14 @@ jobs:
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           FIREBASE_CONFIG_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
-          FIREBASE_CONFIG_AUTH_DOMAIN: "gnd-dev.firebaseapp.com"
-          FIREBASE_CONFIG_DATABASE_URL: "https://gnd-dev.firebaseio.com"
-          FIREBASE_CONFIG_PROJECT_ID: "gnd-dev"
-          FIREBASE_CONFIG_STORAGE_BUCKET: "gnd-dev.appspot.com"
+          FIREBASE_CONFIG_AUTH_DOMAIN: ${{ secrets.FIREBASE_CONFIG_AUTH_DOMAIN }}
+          FIREBASE_CONFIG_DATABASE_URL: ${{ secrets.FIREBASE_CONFIG_DATABASE_URL }}
+          FIREBASE_CONFIG_PROJECT_ID: ${{ secrets.FIREBASE_CONFIG_PROJECT_ID }}
+          FIREBASE_CONFIG_STORAGE_BUCKET: ${{ secrets.FIREBASE_CONFIG_STORAGE_BUCKET }}
           FIREBASE_CONFIG_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
           FIREBASE_CONFIG_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
-          CLOUD_FUNCTIONS_URL: "us-central1-gnd-dev.cloudfunctions.net"
-          OFFLINE_BASE_MAP_SOURCES_URL: "https://storage.googleapis.com/ground-raster-basemaps/s2/br/ro/20200609-mbtiles/footprints.geojson"
+          CLOUD_FUNCTIONS_URL: ${{ secrets.CLOUD_FUNCTIONS_URL }}
+          OFFLINE_BASE_MAP_SOURCES_URL: ${{ secrets.OFFLINE_BASE_MAP_SOURCES_URL }}
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
