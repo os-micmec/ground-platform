@@ -20,7 +20,7 @@ jobs:
       - name: Install Angular-CLI
         run: npm install -g @angular/cli > /dev/null
 
-      - run: npm run build --prod
+      - run: ls && npm run build --prod
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           FIREBASE_CONFIG_API_KEY: ${{ secrets.FIREBASE_CONFIG_API_KEY }}
