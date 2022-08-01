@@ -22,5 +22,6 @@ npm install
 cd ..
 cd web
 npm install
+node ../.github/workflows/ng-env-replace.js
 ng build -c production
 cd ..
