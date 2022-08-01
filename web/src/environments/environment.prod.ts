@@ -18,20 +18,20 @@ import { Env } from './environment-enums';
 
 export const environment = {
   production: true,
-  googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
+  googleMapsApiKey: 'GOOGLE_MAPS_API_KEY',
   firebase: {
-    apiKey: process.env.FIREBASE_CONFIG_API_KEY,
-    authDomain: process.env.FIREBASE_CONFIG_AUTH_DOMAIN,
-    databaseUrl: process.env.FIREBASE_CONFIG_DATABASE_URL,
-    projectId: process.env.FIREBASE_CONFIG_PROJECT_ID,
-    storageBucket: process.env.FIREBASE_CONFIG_STORAGE_BUCKET,
-    messagingSenderId: process.env.FIREBASE_CONFIG_MESSAGING_SENDER_ID,
-    configAppId: process.env.FIREBASE_CONFIG_APP_ID,
+    apiKey: 'GOOGLE_MAPS_API_KEY',
+    authDomain: 'FIREBASE_CONFIG_AUTH_DOMAIN',
+    databaseUrl: 'FIREBASE_CONFIG_DATABASE_URL',
+    projectId: 'FIREBASE_CONFIG_PROJECT_ID',
+    storageBucket: 'FIREBASE_CONFIG_STORAGE_BUCKET',
+    messagingSenderId: 'FIREBASE_CONFIG_MESSAGING_SENDER_ID',
+    configAppId: 'FIREBASE_CONFIG_APP_ID',
   },
-  cloudFunctionsUrl: process.env.CLOUD_FUNCTIONS_URL,
+  cloudFunctionsUrl: 'CLOUD_FUNCTIONS_URL',
   offlineBaseMapSources: [
     {
-      url: process.env.OFFLINE_BASE_MAP_SOURCES_URL!,
+      url: 'OFFLINE_BASE_MAP_SOURCES_URL'!,
     },
   ],
   useEmulators: false,
